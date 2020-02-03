@@ -62,13 +62,22 @@ li a.active {
 }
 .div1 {
 	background-color: white;
-	width: 900px;
-	height: 1000px;
+	width: 720px;
+	height: 730px;
 	border-radius: 25px;
-	margin: 50px 280px;
+	margin: 30px 250px;
 	color: black;
 	text-align: center;
-	
+	.div2
+	{
+		text-align: left;
+	}
+	.button1{
+		float: right;
+		padding: 10px 10px;
+		width: 20px;
+		height: 15px;
+	}
 }
 	</style>
 </head>
@@ -77,27 +86,34 @@ li a.active {
     <div class="w1"><h1>Energy from Water and Air</h1></div>
 	<ul>
 		<li><a href="#home">Home</a></li>
-		<li><a class="active" href="#about_us">About Us</a></li>
+		<li><a href="#about_us">About Us</a></li>
 		<li><a href="#EFW">EFW</a></li>
 		<li><a href="#EFA">EFA</a></li>
-		<li><a href="#Q&A">Q&A </a></li>
+		<li><a class="active" href="#Q&A">Q&A </a></li>
 	</ul>
 	<div class="div1">
-		<div>
-		<p>Here are the members of our team_blue_sea:</p>
-		<hr>
-		<p><b>Vasil Stanchev</b></p>
-		<p><i>First-Developer/Leader</i></p>
-		<img src="images/myself.png">
+		<p>Here you can send us questions and then we will put new topics based on our answers.</p>
+		<div style="text-align: left; margin: 15px 15px;">
+		<form>
+			<i>First name:</i>
+				<input type="text" name="firstname" placeholder="Enter your first name"><br>
+			<i>Last name:</i>
+				<input type="text" name="lastname" placeholder="Enter your last name"><br><br>
+				Chose your gender<br>
+				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+				<input type="radio" name="gender" value="other"> Other<br>
+				<br>
+				Chose a topic<br>
+				<input type="radio" name="topic" value="EFW" checked> EFW<br>
+				<input type="radio" name="topic" value="EFA"> EFA<br>
+				<input type="radio" name="topic" value="both"> Both<br>
+				<br>
+				Write your questions here:<br>
+				<textarea name="message" rows="20" cols="90"></textarea>
+				<input type="button" value="Sent" style="float: right; margin-top: 15px;">
+		</form>
 		</div>
-		<hr>
-		<p><b>Boris Milev</b></p>
-		<p><i>Second-Developer</i></p>
-		<img src="images/boris_img.jpg">
-		<hr>
-		<p><b>Martin Bakalov</b></p>
-		<p><i>Creator of the presentation and writer of the documentation</i></p>
-		<img src="images/GetPersonaPhoto.jfif">
 	</div>
 	<footer>
 		<pre>
