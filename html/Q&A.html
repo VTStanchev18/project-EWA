@@ -23,6 +23,10 @@
 	.w3{
 		float: left;
 	}
+	.h1{
+		text-align: center;
+		color: black;
+	}
 	footer{
 		padding:64px; 
 		text-align:center; 
@@ -63,7 +67,7 @@ li a.active {
 .div1 {
 	background-color: white;
 	width: 720px;
-	height: 730px;
+	height: 930px;
 	border-radius: 25px;
 	margin: 30px 250px;
 	color: black;
@@ -85,14 +89,16 @@ li a.active {
   
     <div class="w1"><h1>Energy from Water and Air</h1></div>
 	<ul>
-		<li><a href="#home">Home</a></li>
-		<li><a href="#about_us">About Us</a></li>
-		<li><a href="#EFW">EFW</a></li>
-		<li><a href="#EFA">EFA</a></li>
-		<li><a class="active" href="#Q&A">Q&A </a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about_us.html">About Us</a></li>
+		<li><a href="EFW.html">EFW</a></li>
+		<li><a href="EFA.html">EFA</a></li>
+		<li><a class="active" href="Q&A.html">Q&A </a></li>
 	</ul>
 	<div class="div1">
-		<p>Here you can send us questions and then we will put new topics based on our answers.</p>
+		<h1 class="h1">Which type of energy is better: air or water?</h1>
+		<p>It's really isn't that important which energy is better since both of them are really good for the environment. Although probably getting energy from air is easier.</p>
+		<p>Here you can send us more questions and then we will put new topics based on our answers.</p>
 		<div style="text-align: left; margin: 15px 15px;">
 		<form>
 			<i>First name:</i>
@@ -102,7 +108,6 @@ li a.active {
 				Chose your gender<br>
 				<input type="radio" name="gender" value="male" checked> Male<br>
 				<input type="radio" name="gender" value="female"> Female<br>
-				<input type="radio" name="gender" value="other"> Other<br>
 				<br>
 				Chose a topic<br>
 				<input type="radio" name="topic" value="EFW" checked> EFW<br>
@@ -116,7 +121,7 @@ li a.active {
 		</div>
 	</div>
 	<footer>
-		<pre>
+		<pre style="text-align: right;">
 			<i>“We can create new ways to create clean water.”</i>
 						<i>-Craig Venter</i>
 
